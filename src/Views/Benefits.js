@@ -9,7 +9,7 @@ export function Benefits() {
 					for both physical and emotional well-being. Here are 10 potential
 					benefits of receiving Reiki services:
 				</p>
-				<ol className="list-group">
+				<ul className="list-group">
 					<li className="list-group-item"> Stress Reduction </li>
 					<li className="list-group-item">Improved Sleep</li>
 					<li className="list-group-item">Pain Relief</li>
@@ -20,11 +20,11 @@ export function Benefits() {
 					<li className="list-group-item">Balancing Chakras</li>
 					<li className="list-group-item">Detoxification</li>
 					<li className="list-group-item">Support for Personal Growth</li>
-				</ol>
+				</ul>
 				<p>
-					While Reiki can be a beneficial complementary therapy, it's always
-					advisable to consult with a healthcare provider for any medical
-					concerns.
+					Important Note: While Reiki can be a beneficial complementary therapy,
+					it's always advisable to consult with a healthcare provider for any
+					medical concerns.
 				</p>
 			</section>
 		</>

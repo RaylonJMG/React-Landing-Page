@@ -1,12 +1,15 @@
 html {
   background-color: rgb(243, 208, 7);
-  margin: 50px;
+  margin: 25px;
 }
 
 main {
+  background-color: aqua;
   color: black;
 }
 
-h3 {
+form {
   color: blue;
+  font-weight: bold;
+  text-align: center;
 }
