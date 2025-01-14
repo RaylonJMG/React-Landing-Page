@@ -9,18 +9,20 @@ export function Benefits() {
 					for both physical and emotional well-being. Here are 10 potential
 					benefits of receiving Reiki services:
 				</p>
-				<ul className="list-group">
-					<li className="list-group-item"> Stress Reduction </li>
-					<li className="list-group-item">Improved Sleep</li>
-					<li className="list-group-item">Pain Relief</li>
-					<li className="list-group-item">Enhanced Emotional Healing</li>
-					<li className="list-group-item">Boosted Immune System</li>
-					<li className="list-group-item">Increased Energy Levels</li>
-					<li className="list-group-item">Mental Clarity and Focus</li>
-					<li className="list-group-item">Balancing Chakras</li>
-					<li className="list-group-item">Detoxification</li>
-					<li className="list-group-item">Support for Personal Growth</li>
-				</ul>
+				<div style={{ backgroundColor: "blue" }}>
+					<ol className="list-group">
+						<li className="list-group-item">Stress Reduction </li>
+						<li className="list-group-item">Improved Sleep</li>
+						<li className="list-group-item">Pain Relief</li>
+						<li className="list-group-item">Enhanced Emotional Healing</li>
+						<li className="list-group-item">Boosted Immune System</li>
+						<li className="list-group-item">Increased Energy Levels</li>
+						<li className="list-group-item">Mental Clarity and Focus</li>
+						<li className="list-group-item">Balancing Chakras</li>
+						<li className="list-group-item">Detoxification</li>
+						<li className="list-group-item">Support for Personal Growth</li>
+					</ol>
+				</div>
 				<p>
 					Important Note: While Reiki can be a beneficial complementary therapy,
 					it's always advisable to consult with a healthcare provider for any

@@ -10,14 +10,18 @@ const message =
 const root = createRoot(window.bodyTag);
 root.render(
 	<>
-		<main className="saintsGradient">
+		<main>
 			<h1>OhThouReiki</h1>
-			<p>{message}</p>
+			<img src="../assets/reiki.1.jpg" width="100%" />
+			<h3 style={{ textAlign: "center" }}>{message}</h3>
+
 			<Description />
+			<img src="../assets/reiki.jpg" width="100%" />
 			<Benefits />
 			<YouTube
 				label="YouTube"
 				src="https://www.youtube.com/embed/8cWrYFMGxbo?si=-e5-9tHUdt8ttmta"></YouTube>
+
 			<form onSubmit={handleSubmit}>
 				<label for="email">Email:</label>
 				<input
@@ -26,7 +30,7 @@ root.render(
 					name="email"
 					placeholder="Email address"
 				/>
-				<input id="Submit" type="submit" />
+				<input name="submit" id="submit" type="submit" />
 			</form>
 		</main>
 	</>

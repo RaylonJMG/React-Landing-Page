@@ -1579,11 +1579,15 @@ function Benefits() {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("section", {
     id: "features",
     title: "Benefits"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, "Reiki, a form of energy healing, is believed to offer several benefits for both physical and emotional well-being. Here are 10 potential benefits of receiving Reiki services:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("ol", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, "Reiki, a form of energy healing, is believed to offer several benefits for both physical and emotional well-being. Here are 10 potential benefits of receiving Reiki services:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    style: {
+      backgroundColor: "blue"
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("ol", {
     className: "list-group"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", {
     className: "list-group-item"
-  }, " Stress Reduction "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", {
+  }, "Stress Reduction "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", {
     className: "list-group-item"
   }, "Improved Sleep"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", {
     className: "list-group-item"
@@ -1601,7 +1605,7 @@ function Benefits() {
     className: "list-group-item"
   }, "Detoxification"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", {
     className: "list-group-item"
-  }, "Support for Personal Growth")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, "While Reiki can be a beneficial complementary therapy, it's always advisable to consult with a healthcare provider for any medical concerns.")));
+  }, "Support for Personal Growth"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, "Important Note: While Reiki can be a beneficial complementary therapy, it's always advisable to consult with a healthcare provider for any medical concerns.")));
 }
 
 /*
@@ -1638,8 +1642,7 @@ While Reiki can be a beneficial complementary therapy, it's always advisable to 
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   Description: () => (/* binding */ Description),
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */   Description: () => (/* binding */ Description)
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 
@@ -1648,7 +1651,8 @@ function Description() {
     id: "description"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, "Step into a world of relaxation and rejuvenation with our Reiki services, where healing energy flows freely to balance your mind, body, and spirit! Whether you're looking to melt away stress, ease chronic pain, or simply recharge your energy, our skilled Reiki practitioners are here to guide you on a transformative journey. With each session, you\u2019ll experience deep relaxation, emotional healing, and a renewed sense of clarity\u2014plus, a peaceful, balanced energy that lasts long after you leave. Treat yourself to the soothing power of Reiki and let your body and mind rediscover harmony!"));
 }
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Description);
+
+//export default Description;
 
 /***/ }),
 
@@ -1668,7 +1672,13 @@ function YouTube(props) {
   const src = props.src;
   const width = props.width;
   const height = props.height;
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("iframe", {
+  const dimensions = {
+    width: "50vw",
+    height: "50vw"
+  };
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    style: dimensions
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("iframe", {
     width: "560",
     height: "315",
     src: src,
@@ -1677,7 +1687,7 @@ function YouTube(props) {
     allow: "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share",
     referrerPolicy: "strict-origin-when-cross-origin",
     allowFullScreen: true
-  }));
+  })));
 }
 
 /***/ }),
@@ -1788,9 +1798,17 @@ __webpack_require__.r(__webpack_exports__);
 
 const message = "Advocating for your transformation to a happier, healthier, better Self.";
 const root = (0,react_dom_client__WEBPACK_IMPORTED_MODULE_1__.createRoot)(window.bodyTag);
-root.render(/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("main", {
-  className: "saintsGradient"
-}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h1", null, "OhThouReiki"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, message), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Views_Description_js__WEBPACK_IMPORTED_MODULE_2__.Description, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Views_Benefits_js__WEBPACK_IMPORTED_MODULE_3__.Benefits, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Views_YouTube_js__WEBPACK_IMPORTED_MODULE_4__.YouTube, {
+root.render(/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("main", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h1", null, "OhThouReiki"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
+  src: "../assets/reiki.1.jpg",
+  width: "100%"
+}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h3", {
+  style: {
+    textAlign: "center"
+  }
+}, message), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Views_Description_js__WEBPACK_IMPORTED_MODULE_2__.Description, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
+  src: "../assets/reiki.jpg",
+  width: "100%"
+}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Views_Benefits_js__WEBPACK_IMPORTED_MODULE_3__.Benefits, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Views_YouTube_js__WEBPACK_IMPORTED_MODULE_4__.YouTube, {
   label: "YouTube",
   src: "https://www.youtube.com/embed/8cWrYFMGxbo?si=-e5-9tHUdt8ttmta"
 }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("form", {
@@ -1803,7 +1821,8 @@ root.render(/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_
   name: "email",
   placeholder: "Email address"
 }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", {
-  id: "Submit",
+  name: "submit",
+  id: "submit",
   type: "submit"
 })))));
 })();

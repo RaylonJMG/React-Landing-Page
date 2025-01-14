@@ -1,13 +1,21 @@
 $myGold: rgb(243, 208, 7);
+$softBlue: rgb(60, 169, 241);
+$softGreen: rgb(87, 173, 87);
+$myTeal: rgb(1, 151, 151);
 
 html {
-	background-color: $myGold;
-	margin: 25px;
+	background-color: $myTeal;
+	margin: 20px;
 }
+
 main {
-	background-color: aqua;
+	background-color: $myTeal;
 	color: black;
 }
+h1 {
+	text-align: center;
+}
+
 form {
 	color: blue;
 	font-weight: bold;
