@@ -1669,25 +1669,35 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 
 function YouTube(props) {
-  const src = props.src;
-  const width = props.width;
-  const height = props.height;
-  const dimensions = {
-    width: "50vw",
-    height: "50vw"
+  debugger;
+  const center = {
+    width: "fit-content",
+    justifySelf: "center"
   };
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    style: dimensions
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("iframe", {
+  const src = props.src;
+  //const width = props.width;
+  //const height = props.height;
+  const dimensions = {
     width: "560",
-    height: "315",
+    height: "315"
+  };
+  const depth = {
+    borderRadius: "10px",
+    boxShadow: "10px 10px grey"
+  };
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    style: (dimensions, center)
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("iframe", {
+    width: "100%",
+    height: "100%",
     src: src,
     title: "YouTube video player",
     frameBorder: "0",
     allow: "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share",
     referrerPolicy: "strict-origin-when-cross-origin",
-    allowFullScreen: true
-  })));
+    allowFullScreen: true,
+    style: depth
+  }));
 }
 
 /***/ }),
@@ -1702,9 +1712,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   handleSubmit: () => (/* binding */ handleSubmit)
 /* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+
 function handleSubmit(event = new Event()) {
   event.preventDefault();
-  output("Form was submitted successfully.");
+  const inputs = event.target;
+  const emailInput = inputs[1];
+  const email = emailInput.value;
+  output("Submitting form for <br>" + email + "...");
 }
 
 /***/ })
@@ -1799,14 +1814,14 @@ __webpack_require__.r(__webpack_exports__);
 const message = "Advocating for your transformation to a happier, healthier, better Self.";
 const root = (0,react_dom_client__WEBPACK_IMPORTED_MODULE_1__.createRoot)(window.bodyTag);
 root.render(/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("main", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h1", null, "OhThouReiki"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
-  src: "../assets/reiki.1.jpg",
+  src: "../assets/reiki.jpg",
   width: "100%"
 }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h3", {
   style: {
     textAlign: "center"
   }
 }, message), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Views_Description_js__WEBPACK_IMPORTED_MODULE_2__.Description, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
-  src: "../assets/reiki.jpg",
+  src: "../assets/reiki.1.jpg",
   width: "100%"
 }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Views_Benefits_js__WEBPACK_IMPORTED_MODULE_3__.Benefits, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Views_YouTube_js__WEBPACK_IMPORTED_MODULE_4__.YouTube, {
   label: "YouTube",

@@ -1,16 +1,16 @@
-$myGold: rgb(243, 208, 7);
-$softBlue: rgb(60, 169, 241);
-$softGreen: rgb(87, 173, 87);
-$myTeal: rgb(1, 151, 151);
+//$myGold: rgb(243, 208, 7);
+//$softBlue: rgb(60, 169, 241);
+//$softGreen: rgb(87, 173, 87);
+//$myTeal: rgb(1, 151, 151);
 
 html {
-	background-color: $myTeal;
-	margin: 20px;
+	//background-color: $myTeal;
+	margin: 35px;
 }
 
 main {
-	background-color: $myTeal;
-	color: black;
+	background-color: black;
+	color: whitesmoke;
 }
 h1 {
 	text-align: center;
@@ -21,3 +21,5 @@ form {
 	font-weight: bold;
 	text-align: center;
 }
+
+//.YouTube {text-align: center;}

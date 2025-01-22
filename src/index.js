@@ -12,11 +12,11 @@ root.render(
 	<>
 		<main>
 			<h1>OhThouReiki</h1>
-			<img src="../assets/reiki.1.jpg" width="100%" />
+			<img src="../assets/reiki.jpg" width="100%" />
 			<h3 style={{ textAlign: "center" }}>{message}</h3>
 
 			<Description />
-			<img src="../assets/reiki.jpg" width="100%" />
+			<img src="../assets/reiki.1.jpg" width="100%" />
 			<Benefits />
 			<YouTube
 				label="YouTube"
