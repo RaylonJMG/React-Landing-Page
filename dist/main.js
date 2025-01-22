@@ -1712,14 +1712,31 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   handleSubmit: () => (/* binding */ handleSubmit)
 /* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var _utils_output_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../utils/output.js */ "./src/utils/output.js");
 
 function handleSubmit(event = new Event()) {
+  debugger;
   event.preventDefault();
   const inputs = event.target;
-  const emailInput = inputs[1];
+  const emailInput = inputs[0];
   const email = emailInput.value;
-  output("Submitting form for <br>" + email + "...");
+  (0,_utils_output_js__WEBPACK_IMPORTED_MODULE_0__.output)("Submitting form for <br>" + email + "Thank you for signing up for our newsletter. Use discount code: REIKIFIED2025 for 15% off your first service or purchase.");
+}
+
+/***/ }),
+
+/***/ "./src/utils/output.js":
+/*!*****************************!*\
+  !*** ./src/utils/output.js ***!
+  \*****************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   output: () => (/* binding */ output)
+/* harmony export */ });
+function output(message = "message", outputTag = "outputTag", shouldAppend = true) {
+  if (shouldAppend) window[outputTag].innerHTML += message;else window[outputTag].innerHTML += message;
 }
 
 /***/ })
@@ -1839,7 +1856,9 @@ root.render(/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_
   name: "submit",
   id: "submit",
   type: "submit"
-})))));
+})), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("output", {
+  id: "outputTag"
+}))));
 })();
 
 /******/ })()

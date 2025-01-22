@@ -32,6 +32,7 @@ root.render(
 				/>
 				<input name="submit" id="submit" type="submit" />
 			</form>
+			<output id="outputTag"></output>
 		</main>
 	</>
 );
