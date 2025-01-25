@@ -9,6 +9,7 @@ export function handleSubmit(event = new Event()) {
 	output(
 		"Submitting form for <br>" +
 			email +
+			"<br>" +
 			"Thank you for signing up for our newsletter. Use discount code: REIKIFIED2025 for 15% off your first service or purchase."
 	);
 }
